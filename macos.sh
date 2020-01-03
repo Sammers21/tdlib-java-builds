@@ -1,3 +1,5 @@
+set -e
+set -x 
 git clone https://github.com/tdlib/td.git
 cd td
 rm -rf build
