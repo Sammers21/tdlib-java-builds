@@ -1,0 +1,9 @@
+name: CI
+on: [release]
+jobs:
+  build:
+    runs-on: macOS-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Run a one-line script
+      run:  /bin/bash macos.sh
