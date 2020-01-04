@@ -4,8 +4,8 @@ on:
     tags:
       - v*
 jobs:
-  ubuntu18.04 build:
-    runs-on: ubuntu-18_04
+  ubuntu-18_04_build:
+    runs-on: ubuntu-18.04
     steps:
     - name: Checkout repo
       uses: actions/checkout@v2
