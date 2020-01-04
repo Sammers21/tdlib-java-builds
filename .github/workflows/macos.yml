@@ -11,4 +11,4 @@ jobs:
       with:
         fetch-depth: 2
     - name: Build tdlib for mac os
-    - run: /bin/bash macos.sh
+      run: /bin/bash macos.sh
