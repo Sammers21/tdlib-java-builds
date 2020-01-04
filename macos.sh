@@ -18,3 +18,4 @@ cmake --build . --target install
 cd ../../..
 cd ..
 ls -l td/tdlib
+/bin/bash commit.sh
