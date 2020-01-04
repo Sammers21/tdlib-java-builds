@@ -4,7 +4,7 @@ on:
     tags:
       - v*
 jobs:
-  macos:
+  windows:
     runs-on: windows
     steps:
     - name: Checkout repo
