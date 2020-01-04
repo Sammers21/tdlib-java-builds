@@ -5,5 +5,5 @@ jobs:
     runs-on: macOS-latest
     steps:
     - uses: actions/checkout@v1
-    - name: Run a one-line script
+    - name: Build tdlib for mac os
       run:  /bin/bash macos.sh
