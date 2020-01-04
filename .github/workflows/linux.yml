@@ -4,7 +4,7 @@ on:
     tags:
       - v*
 jobs:
-  ubuntu-18.04 build:
+  ubuntu18.04 build:
     runs-on: ubuntu-18.04
     steps:
     - name: Checkout repo
