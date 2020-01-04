@@ -1,0 +1,26 @@
+name: Windows
+on:
+  create:
+    tags:
+      - v*
+jobs:
+  macos:
+    runs-on: windows
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 1
+    - name: Build tdlib for windows
+      run: /bin/bash windows.sh
+    - name: Commit files
+      run: |
+        cp -r td/tdlib/bin/ ./
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add libtdjni.dylib org
+        git commit -m "Update MacOS binaries"
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
