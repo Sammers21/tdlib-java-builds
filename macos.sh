@@ -1,3 +1,4 @@
+# This is a build script for mac os
 set -e
 set -x 
 git clone https://github.com/tdlib/td.git
