@@ -15,7 +15,7 @@ jobs:
       run: /bin/bash linux-ubuntu-18.sh
     - name: Commit files
       run: |
-        cp -r  ~/td/tdlib/bin/ ./
+        cp -r td/tdlib/bin/ ./
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add libtdjni.so com
