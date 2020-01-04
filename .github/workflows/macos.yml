@@ -5,8 +5,4 @@ jobs:
     runs-on: macos-latest
     steps:
     - name: brew install coreutils
-    - uses: jdickey/bash@v.1.1.1
-    - run: brew install coreutils
-    - uses: actions/checkout@v1
-    - name: Build tdlib for mac os
-    - run: /bin/bash macos.sh
+      run: brew install coreutils
