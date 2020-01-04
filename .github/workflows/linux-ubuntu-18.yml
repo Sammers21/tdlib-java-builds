@@ -1,27 +1,25 @@
-name: MacOS
+name: Ubuntu 18.04
 on:
   create:
     tags:
       - v*
 jobs:
-  macos:
-    runs-on: macos-latest
+  ubuntu:
+    runs-on: ubuntu-18.04
     steps:
-    - name: Install coreutils
-      run: brew install coreutils
     - name: Checkout repo
       uses: actions/checkout@v2
       with:
         fetch-depth: 1
-    - name: Build tdlib for mac os
-      run: /bin/bash macos.sh
+    - name: Build tdlib for Ubuntu
+      run: /bin/bash linux-ubuntu-18.sh
     - name: Commit files
       run: |
         cp -r  ~/td/tdlib/bin/ ./
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add libtdjni.dylib com
-        git commit -m "Update MacOS binaries"
+        git add libtdjni.so com
+        git commit -m "Update Linux binaries"
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:

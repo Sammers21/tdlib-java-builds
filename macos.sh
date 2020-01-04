@@ -18,8 +18,3 @@ cmake --build . --target install
 cd ../../..
 cd ..
 ls -l td/tdlib
-cp -r  ~/td/tdlib/bin/ ./
-git config --local user.email "action@github.com"
-git config --local user.name "GitHub Action"
-git add libtdjni.dylib com
-git commit -m "Update MacOS binaries"
