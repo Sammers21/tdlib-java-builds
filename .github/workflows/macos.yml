@@ -1,7 +1,8 @@
 name: CI
 on:
-  push:
+  create:
     tags:
+      - v*
 jobs:
   build:
     runs-on: macos-latest
