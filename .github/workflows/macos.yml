@@ -20,7 +20,7 @@ jobs:
         cp -r td/tdlib/bin/ ./
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add libtdjni.dylib com
+        git add libtdjni.dylib org
         git commit -m "Update MacOS binaries"
     - name: Push changes
       uses: ad-m/github-push-action@master
