@@ -13,15 +13,6 @@ jobs:
         fetch-depth: 1
     - name: Build tdlib for Ubuntu
       run: /bin/bash linux-ubuntu-18.sh
-    - name: Commit files
-      run: |
-        set -e
-        set -x
-        cp -r td/tdlib/bin/ ./
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git add libtdjni.so org
-        git commit -m "Update Linux binaries"
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
