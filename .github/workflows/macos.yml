@@ -11,6 +11,6 @@ jobs:
     - name: Checkout repo
       uses: actions/checkout@v2
       with:
-        fetch-depth: 2
+        fetch-depth: 1
     - name: Build tdlib for mac os
       run: /bin/bash macos.sh
