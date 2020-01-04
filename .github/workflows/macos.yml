@@ -4,5 +4,11 @@ jobs:
   build:
     runs-on: macos-latest
     steps:
-    - name: brew install coreutils
+    - name: Install coreutils
       run: brew install coreutils
+    - name: Checkout repo
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 2
+    - name: Build tdlib for mac os
+    - run: /bin/bash macos.sh
