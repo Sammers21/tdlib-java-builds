@@ -1,4 +1,4 @@
-name: MacOS + Linux
+name: MacOS
 on:
   create:
     tags:
