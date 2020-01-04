@@ -2,8 +2,10 @@ name: CI
 on: [push]
 jobs:
   build:
-    runs-on: macOS-latest
+    runs-on: macos-latest
     steps:
+    - name: install coreutils
+    - run: brew install
     - uses: actions/checkout@v1
     - name: Build tdlib for mac os
-      run:  /bin/bash macos.sh
+    - run: /bin/bash macos.sh
