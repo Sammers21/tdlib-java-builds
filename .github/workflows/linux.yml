@@ -11,6 +11,7 @@ jobs:
       uses: actions/checkout@v2
       with:
         fetch-depth: 1
+        ref: master
     - name: Build tdlib for Ubuntu
       run: /bin/bash linux-ubuntu-18.sh
     - name: Push changes

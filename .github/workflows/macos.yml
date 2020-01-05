@@ -13,6 +13,7 @@ jobs:
       uses: actions/checkout@v2
       with:
         fetch-depth: 1
+        ref: master
     - name: Build tdlib for mac os
       run: /bin/bash macos.sh
     - name: Push changes
