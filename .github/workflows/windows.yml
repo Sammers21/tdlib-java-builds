@@ -2,7 +2,7 @@ name: Windows
 on:
   create:
     tags:
-      - v*
+      - v*-windows
 jobs:
   windows:
     runs-on: windows-latest
