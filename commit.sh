@@ -1,6 +1,6 @@
 set -e
 set -x
-cp -r td/tdlib/bin/ ./
+cp -a td/tdlib/bin/. ./
 rm -rf td/
 git config --local user.email "action@github.com"
 git config --local user.name "GitHub Action"
