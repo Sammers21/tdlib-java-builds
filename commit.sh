@@ -5,4 +5,5 @@ rm -rf td/
 git config --local user.email "action@github.com"
 git config --local user.name "GitHub Action"
 git checkout master
-git commit -m "Update binaries" -a || true
+git add -A
+git commit -m "Update binaries" || true
