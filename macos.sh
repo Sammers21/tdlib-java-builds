@@ -3,6 +3,7 @@ set -e
 set -x 
 git clone https://github.com/tdlib/td.git
 cd td
+git checkout v1.5.0
 rm -rf build
 mkdir build
 cd build
