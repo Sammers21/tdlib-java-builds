@@ -3,7 +3,7 @@ set -e
 set -x 
 git clone https://github.com/tdlib/td.git
 cd td
-git checkout v1.5.0
+git checkout v1.6.0
 rm -rf build
 mkdir build
 cd build
@@ -19,4 +19,5 @@ cmake --build . --target install
 cd ../../..
 cd ..
 ls -l td/tdlib
+export OS="mac"
 /bin/bash commit.sh

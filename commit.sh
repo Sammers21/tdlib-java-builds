@@ -7,4 +7,4 @@ git config --local user.email "action@github.com"
 git config --local user.name "GitHub Action"
 git checkout master
 git add -A
-git commit -m "Update binaries" || true
+git commit -m "Update binaries $OS" || true

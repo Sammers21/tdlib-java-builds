@@ -3,7 +3,7 @@ sudo apt-get upgrade
 sudo apt-get install make git zlib1g-dev libssl-dev gperf php cmake default-jdk g++
 git clone https://github.com/tdlib/td.git
 cd td
-git checkout v1.5.0
+git checkout v1.6.0
 rm -rf build
 mkdir build
 cd build
@@ -20,4 +20,5 @@ cmake --build . --target install
 cd ../../..
 cd ..
 ls -l td/tdlib
+export OS="ubuntu"
 /bin/bash commit.sh
