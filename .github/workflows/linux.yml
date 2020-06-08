@@ -1,5 +1,7 @@
 name: Linux
 on:
+  schedule:
+    - cron: "0 0 1 * *"
   create:
     tags:
       - v*
